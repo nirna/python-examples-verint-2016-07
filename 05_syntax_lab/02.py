@@ -1,6 +1,6 @@
-"""
-Write a Python program that randomizes 7 numbers
-and prints their sum total.
-If the sum is divisable by 7, also print the word "Boom"
-"""
-
+#Week01_Exercise01_Assignment02
+from random import randint
+nIterations = 7
+Sum7 = 0
+for iterID in range(0,nIterations) : Sum7 += randint(1,100)
+print "The sum of the %d random integers is: %d%s" % (nIterations, Sum7, " - Boom!!!" if Sum7 % 7 == 0 else "")
