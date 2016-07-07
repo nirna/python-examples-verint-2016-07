@@ -1,10 +1,10 @@
--""" 
+""" 
 Write a program that selects a random number
 and asks the user to guess it.
 After each guess print a hint "too large" or "too small" to the user.
 Bonus: To make things interesting, the program should cheat once in a while
 """
- #Week01_Exercise01_Assignment07
+#Week01_Exercise01_Assignment07
 from random import randint
 pcSelection = randint(1,100)
 while True:
