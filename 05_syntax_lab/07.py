@@ -1,4 +1,10 @@
-#Week01_Exercise01_Assignment07
+-""" 
+Write a program that selects a random number
+and asks the user to guess it.
+After each guess print a hint "too large" or "too small" to the user.
+Bonus: To make things interesting, the program should cheat once in a while
+"""
+ #Week01_Exercise01_Assignment07
 from random import randint
 pcSelection = randint(1,100)
 while True:
@@ -9,6 +15,5 @@ while True:
         elif usrSelection > pcSelection: print "Too big..."
         else: break
     else : # introduce error
-        if usrSelection < pcSelection: print "Too big..."
-        else: print "Too small..."
+        print "Too big..." if usrSelection < pcSelection else "Too small..."
 print "Yeeaaaaaaaa!!!"
