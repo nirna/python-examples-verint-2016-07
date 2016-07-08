@@ -7,11 +7,11 @@ import sys
 import argparse
 # Read input arguments
 parser = argparse.ArgumentParser()
-parser.add_argument("root_dir", 
+parser.add_argument("-r","--root_dir", 
                     type=str,
                     default=os.path.abspath(os.sep),
                     help="The root folder to search under")
-parser.add_argument("size_threshold_bytes", 
+parser.add_argument("-b","--size_threshold_bytes", 
                     type=int,
                     default=1024*1024,
                     help="The threshold of the file size in bytes; larger files will be removed")
