@@ -1,8 +1,1 @@
-"""
-Use range() and list comprehension to get
-the list of all lowercase english letters
-Hint: look for chr() and ord()
-"""
-
-
-
+[chr(n) for n in range(255) if chr(n) >= 'a' and chr(n) <= 'z']
