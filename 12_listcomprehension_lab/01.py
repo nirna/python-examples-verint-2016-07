@@ -1,1 +1,1 @@
-[chr(n) for n in range(255) if chr(n) >= 'a' and chr(n) <= 'z']
+print [chr(n) for n in range(ord('a'),ord('z')+1)]
