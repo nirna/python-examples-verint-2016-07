@@ -2,13 +2,13 @@
 class Summer(object):
 
     def __init__(self):
-        self.sum = 0
+        self._sum = 0
 
     def add(self, *nums):
-        for n in nums: self.sum += n
+        self._sum += sum(nums)
 
     def total(self):
-        return self.sum
+        return self._sum
 
 
 #### MAIN ####
